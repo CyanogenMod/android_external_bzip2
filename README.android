@@ -1,0 +1,4 @@
+This is bzip-1.0.5 from http://www.bzip.org/.
+
+No changes were made apart from adding this file, the Android.mk
+makefile, and the empty MODULE_LICENSE_BSD_LIKE file.
