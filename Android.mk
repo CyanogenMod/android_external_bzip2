@@ -32,7 +32,6 @@ LOCAL_SRC_FILES := $(bzlib_files)
 LOCAL_MODULE := libbz
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
 ifeq ($(TARGET_ARCH),arm)
-  LOCAL_NDK_VERSION := 5
   LOCAL_SDK_VERSION := 9
 endif
 include $(BUILD_STATIC_LIBRARY)
