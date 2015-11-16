@@ -54,6 +54,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 
 BZIP_LINKS := bzcat bunzip2
-LOCAL_POST_INSTALL_CMD := $(hide) $(foreach t,$(BZIP_TOOLS),ln -sf pigz $(TARGET_OUT)/xbin/$(t);)
+LOCAL_POST_INSTALL_CMD := $(hide) $(foreach t,$(BZIP_TOOLS),ln -sf bzip2 $(TARGET_OUT)/xbin/$(t);)
 
 include $(BUILD_EXECUTABLE)
